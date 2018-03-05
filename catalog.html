@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="center clearfix">
+        <a class="logo">
+            DEVICE
+        </a>
+        <form class="search-form" action="__action_path" method="post">
+          <!-- TODO form -->
+        </form>
+        <nav class="user-navigation">
+          <a class="user-navigation-login" href="login.html">Войти</a>
+          <a class="user-navigation-exit" href="logout.html">Выйти</a>
+          <a class="user-navigation-compare" href="compare.html">Сравнить</a>
+          <a class="user-navigation-shopping-cart" href="shopping_chart.html">Корзина</a>
+        </nav>
+        <nav class="product-navigation">
+          <ul class="product-navigation-list">
+            <li>
+              <a class="product-navigation-list-dropdownlist-name" href="catalog.html">Каталог товаров</a>
+              <ul class="product-navigation-list-dropdownlist">
+                <li><a href="catalog.html#virtual-reality">Виртуальная реальность</a></li>
+                <li><a href="catalog.html#fitness-bracelet">Фитнесс-браслеты</a></li>
+                <li><a href="catalog.html#drone">Квадрокоптеры</a></li>
+                <li><a href="catalog.html#selfie-monopod">Моноподы для селфи</a></li>
+                <li><a href="catalog.html#smart-watch">Умные часы</a></li>
+                <li><a href="catalog.html#action-camera">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li><a class="product-navigation-list-service" href="delivery.html">Доставка</a></li>
+            <li><a class="product-navigation-list-service" href="warranty.html">Гарантия</a></li>
+            <li><a class="product-navigation-list-service" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="list-of-products">
+      <header class="product-title">
+        <h1>Моноподы для селфи</h1>
+        <nav class="breadcrumbs">
+          <ul >
+            <li>
+              <a href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li>
+              <a class="current-breadcrumb">Моноподы для селфи</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <aside class="product-list-filter">
+        <div class="product-list-filter-title">
+            <h2>Фильтр:</h2>
+        </div>
+        <form class="product-list-filter-form" action="__action_url" method="post">
+          <!-- TODO filter form -->
+        </form>
+      </aside>
+      <section class="product-list-content">
+        <article class="product-list-content-sorting-order">
+          <h2 class="product-list-content-sorting-order-title">Сортировка:</h2>
+          <div class="product-list-content-sorting-ascending-descending">
+              <a class="product-list-content-sorting-button-ascending" href="#">up</a>
+              <a class="product-list-content-sorting-button-descending current">down</a>
+          </div>
+          <div class="product-list-content-sorting-by-type">
+              <a class="current">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По популярности</a>
+          </div>
+        </article>
+        <section class="product-list-content-items">
+          <div class="product-list-content-item-page">
+            <article class="product-list-content-item">
+              <img class="product-list-content-item-img" src="img/item-1.jpg" width="360" height="380" alt="item-1">
+              <div class="product-list-content-item-action">
+                <a class="product-list-content-item-action-buy popup-button" href="shopping-cart.html">В корзину</a>
+                <a class="product-list-content-item-action-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <a class="product-list-content-item-name" href="amateur-selfie-stick.html">Любительская селфи-палка</a>
+              <span>500 руб.</span>
+            </article>
+            <article class="product-list-content-item">
+              <img class="product-list-content-item-img" src="img/item-2.jpg" width="360" height="380" alt="item-2">
+              <div class="product-list-content-item-action">
+                <a class="product-list-content-item-action-buy popup-button" href="shopping-cart.html">В корзину</a>
+                <a class="product-list-content-item-action-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <a class="product-list-content-item-name" href="pro-selfie-stick.html">
+                Профессиональная<br>
+                селфи-палка
+              </a>
+              <span>1 500 руб.</span>
+            </article>
+            <article class="product-list-content-item">
+              <img class="product-list-content-item-img" src="img/item-3.jpg" width="360" height="380" alt="item-3">
+              <div class="product-list-content-item-action">
+                <a class="product-list-content-item-action-buy popup-button" href="shopping-cart.html">В корзину</a>
+                <a class="product-list-content-item-action-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <a class="product-list-content-item-name" href="waterproof-selfie-stick.html">Непотопляемая селфи-палка</a>
+              <span>2 500 руб.</span>
+            </article>
+            <article class="product-list-content-item new">
+              <img class="product-list-content-item-img" src="img/item-4.jpg" width="360" height="380" alt="item-4">
+              <div class="product-list-content-item-action">
+                <a class="product-list-content-item-action-buy popup-button" href="shopping-cart.html">В корзину</a>
+                <a class="product-list-content-item-action-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <a class="product-list-content-item-name" href="follow-me-selfie-stick.html">
+                Селфи-палка<br>
+                «Следуй за мной»
+              </a>
+              <span>4 900 руб.</span>
+            </article>
+          </div>
+          <nav class="product-list-content-pagination">
+            <ul>
+              <li class="product-list-content-previous-page">
+                <a class="product-list-content-previous-page-link" href="#/prev/">Назад</a>
+              </li>
+              <li>
+                <a class="current">1</a>
+              </li>
+              <li>
+                <a href="#/2/">2</a>
+              </li>
+              <li>
+                <a href="#/3/">3</a>
+              </li>
+              <li class="product-list-content-next-page">
+                <a class="product-list-content-next-page-link" href="#/next/">Вперед</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </main>
+    <footer class="bottom-footer">
+        <article class="footer-address">
+          <a>
+            DEVICE
+          </a>
+          <p>
+            г. Москва, ул. Строителей, 15
+          </p>
+        </article>
+        <section class="footer-center-links">
+          <div class="footer-service-links-block">
+            <a href="delivery.html">Доставка</a>
+            <a href="warranty.html">Гарантия</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+          <div class="footer-social-media-block">
+            <a class="social-button social-button-fb" href="https://www.facebook.com/device-shop/">Фейсбук</a>
+            <a class="social-button social-button-inst" href="https://www.instagram.com/device-shop/">Инстаграм</a>
+            <a class="social-button social-button-tw" href="https://twitter.com/device-shop/">Твиттер</a>
+          </div>
+        </section>
+        <aside class="footer-aside">
+          <div class="footer-user-navigation-block">
+            <a class="footer-login-link" href="login.html">Войти</a>
+            <a class="footer-compare-link" href="compare.html">Сравнить</a>
+            <a class="footer-shopping-cart-link" href="shopping-cart.html">Корзина</a>
+          </div>
+          <div class="telephone-block">
+            Тел.: +7 (495) 495-95-95
+          </div>
+          <div class="copyright-block">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </div>
+        </aside>
+    </footer>
+  </body>
+</html>
