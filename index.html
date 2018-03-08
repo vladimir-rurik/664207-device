@@ -5,19 +5,11 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <!-- radio buttons definition -->
-    <input type="radio" id="slider-button-first" name="slide-toggle" checked="">
-    <input type="radio" id="slider-button-second" name="slide-toggle">
-    <input type="radio" id="slider-button-third" name="slide-toggle">
-    <input type="radio" id="service-button-delivery" name="service-toggle" checked="">
-    <input type="radio" id="service-button-warranty" name="service-toggle">
-    <input type="radio" id="service-button-credit" name="service-toggle">
-    <!-- end of the radio buttons definition -->
     <header class="top-header">
       <a class="logo">
           DEVICE
       </a>
-      <form class="search-form" action="__action_path" method="post">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <!-- TODO form -->
       </form>
       <nav class="user-navigation">
@@ -142,13 +134,16 @@
         <aside>
           <ul class="slider-button-list">
             <li>
-              <label for="slider-button-first"></label>
+              <label class="vusually-hidden" for="slider-button-first">Слайд для самой длинной палки для селфи</label>
+              <input type="radio" id="slider-button-first" name="slide-toggle" checked="">
             </li>
             <li>
-              <label for="slider-button-second"></label>
+              <label class="vusually-hidden" for="slider-button-second">Слайд для фитнесс-браслета</label>
+              <input type="radio" id="slider-button-second" name="slide-toggle">
             </li>
             <li>
-              <label for="slider-button-third"></label>
+              <label class="vusually-hidden" for="slider-button-third">Слайд для квадрокоптера</label>
+              <input type="radio" id="slider-button-third" name="slide-toggle">
             </li>
           </ul>
         </aside>
@@ -157,38 +152,38 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <a class="popular-product-link" href="catalog.html#virtual_reality.html">
           <div class="popular-product-img-block-virtual-reality">
-            <img src="img/popular-product-virtual-reality.png" width="97" height="55" alt="Виртуальная реальность">
+            <img src="img/popular-product-virtual-reality.svg" width="97" height="55" alt="Виртуальная реальность">
           </div>
           Виртуальная реальность
         </a>
         <a class="popular-product-link" href="catalog.html#monopod.html">
           <div class="popular-product-img-block-selfie-monopod">
-            <img src="img/popular-product-selfie-monopod.png" width="86" height="117" alt="Моноподы">
+            <img src="img/popular-product-selfie-monopod.svg" width="86" height="117" alt="Моноподы">
           </div>
           Моноподы
           для селфи
         </a>
         <a class="popular-product-link" href="catalog.html#action-camera.html">
           <div class="popular-product-img-block-action-camera">
-            <img src="img/popular-product-action-camera.png" width="71" height="87" alt="Камеры">
+            <img src="img/popular-product-action-camera.svg" width="71" height="87" alt="Камеры">
           </div>
           Экшн-камеры
         </a>
         <a class="popular-product-link" href="catalog.html#fitness-bracelet.html">
           <div class="popular-product-img-block-fitness-bracelet">
-            <img src="img/popular-product-fitness-bracelet.png" width="107" height="65" alt="Фитнесc браслеты">
+            <img src="img/popular-product-fitness-bracelet.svg" width="107" height="65" alt="Фитнесc браслеты">
           </div>
           Фитнесc браслеты
         </a>
         <a class="popular-product-link" href="catalog.html#smart-watch.html">
           <div class="popular-product-img-block-smart-watch">
-            <img src="img/popular-product-smart-watch.png" width="56" height="98" alt="Умные часы">
+            <img src="img/popular-product-smart-watch.svg" width="56" height="98" alt="Умные часы">
           </div>
           Умные часы
         </a>
         <a class="popular-product-link" href="catalog.html#drone.html">
           <div class="popular-product-img-block-drone">
-            <img src="img/popular-product-drone.png" width="132" height="69" alt="Квадрокоптеры">
+            <img src="img/popular-product-drone.svg" width="132" height="69" alt="Квадрокоптеры">
           </div>
           Квадрокоптеры
         </a>
@@ -198,12 +193,15 @@
         <ul class="service-buttton-list">
           <li>
             <label class="service-button" for="service-button-delivery">Доставка</label>
+            <input type="radio" id="service-button-delivery" name="service-toggle" checked="">
           </li>
           <li>
             <label class="service-button" for="service-button-warranty">Гарантия</label>
+            <input type="radio" id="service-button-warranty" name="service-toggle">
           </li>
           <li>
             <label class="service-button" for="service-button-credit">Кредит</label>
+            <input type="radio" id="service-button-credit" name="service-toggle">
           </li>
         </ul>
         <section class="service-item-delivery">
@@ -283,14 +281,14 @@
             проверить работоспособность покупки. Всякое бывает.
           </p>
           <a class="map" href="#">
-            <img src="">
+            <img src="img/map.jpg" alt="Яндекс карта" width="560" height="222">
           </a>
           <a class="popup-button" href="write-us.html">Напишите нам</a>
         </article>
       </article>
       <footer class="bottom-footer">
           <article class="footer-address">
-            <h2 class="visually-hidden">Адрес компании</h2>
+            <h2 class="visually-hidden">Лого и адрес компании</h2>
             <a>
               DEVICE
             </a>
