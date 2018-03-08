@@ -5,43 +5,50 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <!-- radio buttons definition -->
+    <input type="radio" id="slider-button-first" name="slide-toggle" checked="">
+    <input type="radio" id="slider-button-second" name="slide-toggle">
+    <input type="radio" id="slider-button-third" name="slide-toggle">
+    <input type="radio" id="service-button-delivery" name="service-toggle" checked="">
+    <input type="radio" id="service-button-warranty" name="service-toggle">
+    <input type="radio" id="service-button-credit" name="service-toggle">
+    <!-- end of the radio buttons definition -->
     <header class="top-header">
-      <div class="center clearfix">
-        <a class="logo">
-            DEVICE
-        </a>
-        <form class="search-form" action="__action_path" method="post">
-          <!-- TODO form -->
-        </form>
-        <nav class="user-navigation">
-          <a class="user-navigation-login" href="login.html">Войти</a>
-          <a class="user-navigation-compare" href="compare.html">Сравнить</a>
-          <a class="user-navigation-shopping-cart" href="shopping_chart.html">Корзина</a>
-        </nav>
-        <nav class="product-navigation">
-          <ul class="product-navigation-list">
-            <li>
-              <a class="product-navigation-list-dropdownlist-name" href="catalog.html">Каталог товаров</a>
-              <ul class="product-navigation-list-dropdownlist">
-                <li><a href="catalog.html#virtual-reality">Виртуальная реальность</a></li>
-                <li><a href="catalog.html#fitness-bracelet">Фитнесс-браслеты</a></li>
-                <li><a href="catalog.html#drone">Квадрокоптеры</a></li>
-                <li><a href="catalog.html#selfie-monopod">Моноподы для селфи</a></li>
-                <li><a href="catalog.html#smart-watch">Умные часы</a></li>
-                <li><a href="catalog.html#action-camera">Экшн-камеры</a></li>
-              </ul>
-            </li>
-            <li><a class="product-navigation-list-service" href="delivery.html">Доставка</a></li>
-            <li><a class="product-navigation-list-service" href="warranty.html">Гарантия</a></li>
-            <li><a class="product-navigation-list-service" href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      <a class="logo">
+          DEVICE
+      </a>
+      <form class="search-form" action="__action_path" method="post">
+        <!-- TODO form -->
+      </form>
+      <nav class="user-navigation">
+        <a class="user-navigation-login" href="login.html">Войти</a>
+        <a class="user-navigation-compare" href="compare.html">Сравнить</a>
+        <a class="user-navigation-shopping-cart" href="shopping_chart.html">Корзина</a>
+      </nav>
+      <nav class="product-navigation">
+        <ul class="product-navigation-list">
+          <li>
+            <a class="product-navigation-list-dropdownlist-name" href="catalog.html">Каталог товаров</a>
+            <ul class="product-navigation-list-dropdownlist">
+              <li><a href="catalog.html#virtual-reality">Виртуальная реальность</a></li>
+              <li><a href="catalog.html#fitness-bracelet">Фитнесс-браслеты</a></li>
+              <li><a href="catalog.html#drone">Квадрокоптеры</a></li>
+              <li><a href="catalog.html#selfie-monopod">Моноподы для селфи</a></li>
+              <li><a href="catalog.html#smart-watch">Умные часы</a></li>
+              <li><a href="catalog.html#action-camera">Экшн-камеры</a></li>
+            </ul>
+          </li>
+          <li><a class="product-navigation-list-service" href="delivery.html">Доставка</a></li>
+          <li><a class="product-navigation-list-service" href="warranty.html">Гарантия</a></li>
+          <li><a class="product-navigation-list-service" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="index-main">
       <article class="slider slide-set">
-        <article class="first-slide" id="slide-01">
-          <img src="img/slide-01.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
+        <h2 class="visually-hidden">Слайды</h2>
+        <article class="first-slide" id="slide-longest-selfie-stick">
+          <img src="img/slide-longest-selfie-stick.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
           <header class="slide-header">
             <span class="slide-number">01</span>
             <h2 class="slide-header-text">
@@ -50,6 +57,7 @@
             </h2>
           </header>
           <section class="slide-description">
+            <h2 class="visually-hidden">Описание самой длинной палки для селфи</h2>
             <p>
               Самая длинная палка для селфи доступна в нашем магазине.
             </p>
@@ -75,8 +83,8 @@
             </ul>
           </footer>
         </article>
-        <article class="second-slide" id="slide-02">
-          <img src="img/slider-02.png" width="345" height="485" alt="Мотивирующий фитнесс-браслет">
+        <article class="second-slide" id="slide-fitness-bracelet">
+          <img src="img/slider-fitness-bracelet.png" width="345" height="485" alt="Мотивирующий фитнесс-браслет">
           <header class="slide-header">
             <span class="slide-number">02</span>
             <h2 class="slide-header-text">
@@ -85,6 +93,7 @@
             </h2>
            </header>
             <section class="slide-description">
+              <h2 class="visually-hidden">Описание фитнесс-браслетов</h2>
               <p>
                 Мотивирующие фитнесc-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.
@@ -100,18 +109,19 @@
               </ul>
             </footer >
         </article>
-        <article class="third-slide" id="slide-03">
-          <img src="img/slider-03.png" width="526" height="334" alt="Квадрокоптер с лазером">
+        <article class="third-slide" id="slide-drone">
+          <img src="img/slider-drone.png" width="526" height="334" alt="Квадрокоптер с лазером">
           <header class="slide-header">
             <span class="slide-number">03</span>
             <h2 class="slide-header-text">
-              Порхает как бабочка,<br>
+              Порхает как бабочка,
               жалит как пчела!
             </h2>
           </header>
           <section class="slide-description">
+            <h2 class="visually-hidden">Описание квадрокоптера</h2>
             <p>
-              Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+              Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.
             </p>
             <a class="slide-read-more-button" href="quadrocopter.html">Подробнее</a>
@@ -144,6 +154,7 @@
         </aside>
       </article>
       <section class="top-list-of-popular-product">
+        <h2 class="visually-hidden">Популярные товары</h2>
         <a class="popular-product-link" href="catalog.html#virtual_reality.html">
           <div class="popular-product-img-block-virtual-reality">
             <img src="img/popular-product-virtual-reality.png" width="97" height="55" alt="Виртуальная реальность">
@@ -154,7 +165,7 @@
           <div class="popular-product-img-block-selfie-monopod">
             <img src="img/popular-product-selfie-monopod.png" width="86" height="117" alt="Моноподы">
           </div>
-          Моноподы<br>
+          Моноподы
           для селфи
         </a>
         <a class="popular-product-link" href="catalog.html#action-camera.html">
@@ -183,6 +194,7 @@
         </a>
       </section>
       <article class="services">
+        <h2 class="visually-hidden">Сервисы</h2>
         <ul class="service-buttton-list">
           <li>
             <label class="service-button" for="service-button-delivery">Доставка</label>
@@ -220,6 +232,7 @@
         </section>
       </article>
       <section class="partners">
+        <h2 class="visuall-hidden">Список партнеров</h2>
         <a class="partner-link" href="http://www.dji.com/">
           <img src="img/logo-1-black-white.jpg" width="260" height="100" alt="dji">
           <img src="img/logo-1-colored.jpg" width="260" height="100" alt="dji-color">
@@ -238,6 +251,7 @@
         </a>
       </section>
       <article class="company-information">
+        <h2 class="visually-hidden">Информация о компании</h2>
         <article class="about-us">
           <h2>О нас</h2>
           <p>
@@ -276,6 +290,7 @@
       </article>
       <footer class="bottom-footer">
           <article class="footer-address">
+            <h2 class="visually-hidden">Адрес компании</h2>
             <a>
               DEVICE
             </a>
@@ -284,6 +299,7 @@
             </p>
           </article>
           <section class="footer-center-links">
+            <h2 class="visually-hidden">Сервисы и контакты в соц. сетях</h2>
             <div class="footer-service-links-block">
               <a href="delivery.html">Доставка</a>
               <a href="warranty.html">Гарантия</a>
