@@ -12,3 +12,21 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+/* .virtual-reality {
+  display: block;
+} */
+
+.virtual-reality::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.virtual-reality::after {
+  content: "";
+  width: 97px;
+  height: 55px;
+  background-image: url("img/product-category-virtual-reality.svg");
+}

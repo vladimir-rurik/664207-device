@@ -11,7 +11,8 @@
           DEVICE
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <!-- TODO form -->
+        <input type="search" class="input-search" name="search" placeholder="поиск по&nbsp;сайту">
+        <input type="submit" class="input-submit visually-hidden" value="Найти">
       </form>
       <nav class="user-navigation">
         <a class="user-navigation-login" href="login.html">Войти</a>
@@ -57,23 +58,17 @@
             <p>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a class="slide-read-more-button" href="longest-selfie-stick.html">Подробнее</a>
+            <a class="slide-read-more-button popup-button" href="longest-selfie-stick.html">Подробнее</a>
           </section>
           <footer>
-            <ul class="slide-product-characteristic-list">
-              <li>
-                <span class="slide-product-characteristic">8,5 м</span>
-                <span class="slide-product-characteristic-description">Длина палки</span>
-              </li>
-              <li>
-                <span class="slide-product-characteristic">5 кг</span>
-                <span class="slide-product-characteristic-description">Вес палки</span>
-              </li>
-              <li>
-                <span class="slide-product-characteristic">Карбон</span>
-                <span class="slide-product-characteristic-description">Материал</span>
-              </li>
-            </ul>
+            <dl class="slide-product-characteristic-list">
+              <dt class="slide-product-characteristic">8,5 м</dt>
+              <dd class="slide-product-characteristic-description">Длина палки</dd>
+              <dt class="slide-product-characteristic">5 кг</dt>
+              <dd class="slide-product-characteristic-description">Вес палки</dd>
+              <dt class="slide-product-characteristic">Карбон</dt>
+              <dd class="slide-product-characteristic-description">Материал</dd>
+            </dl>
           </footer>
         </article>
         <article class="second-slide" id="slide-fitness-bracelet">
@@ -149,42 +144,42 @@
           </ul>
         </aside>
       </article>
-      <section class="top-list-of-popular-product">
+      <section class="top-list-of-product-category">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <a class="popular-product-link" href="catalog.html#virtual_reality.html">
-          <div class="popular-product-img-block-virtual-reality">
-            <img src="img/popular-product-virtual-reality.svg" width="97" height="55" alt="Виртуальная реальность">
-          </div>
+        <a class="product-category-link virtual-reality" href="catalog.html#virtual-reality.html">
+          <!-- <div class="product-category-img-block-virtual-reality">
+            <img src="img/product-category-virtual-reality.svg" width="97" height="55" alt="Виртуальная реальность">
+          </div> -->
           Виртуальная реальность
         </a>
-        <a class="popular-product-link" href="catalog.html#monopod.html">
-          <div class="popular-product-img-block-selfie-monopod">
-            <img src="img/popular-product-selfie-monopod.svg" width="86" height="117" alt="Моноподы">
+        <a class="product-category-link" href="catalog.html#monopod.html">
+          <div class="product-category-img-block-selfie-monopod">
+            <img src="img/product-category-selfie-monopod.svg" width="86" height="117" alt="Моноподы">
           </div>
           Моноподы
-          для селфи
+          для&nbsp;селфи
         </a>
-        <a class="popular-product-link" href="catalog.html#action-camera.html">
-          <div class="popular-product-img-block-action-camera">
-            <img src="img/popular-product-action-camera.svg" width="71" height="87" alt="Камеры">
+        <a class="product-category-link" href="catalog.html#action-camera.html">
+          <div class="product-category-img-block-action-camera">
+            <img src="img/product-category-action-camera.svg" width="71" height="87" alt="Камеры">
           </div>
           Экшн-камеры
         </a>
-        <a class="popular-product-link" href="catalog.html#fitness-bracelet.html">
-          <div class="popular-product-img-block-fitness-bracelet">
-            <img src="img/popular-product-fitness-bracelet.svg" width="107" height="65" alt="Фитнесc браслеты">
+        <a class="product-category-link" href="catalog.html#fitness-bracelet.html">
+          <div class="product-category-img-block-fitness-bracelet">
+            <img src="img/product-category-fitness-bracelet.svg" width="107" height="65" alt="Фитнесc браслеты">
           </div>
           Фитнесc браслеты
         </a>
-        <a class="popular-product-link" href="catalog.html#smart-watch.html">
-          <div class="popular-product-img-block-smart-watch">
-            <img src="img/popular-product-smart-watch.svg" width="56" height="98" alt="Умные часы">
+        <a class="product-category-link" href="catalog.html#smart-watch.html">
+          <div class="product-category-img-block-smart-watch">
+            <img src="img/product-category-smart-watch.svg" width="56" height="98" alt="Умные часы">
           </div>
           Умные часы
         </a>
-        <a class="popular-product-link" href="catalog.html#drone.html">
-          <div class="popular-product-img-block-drone">
-            <img src="img/popular-product-drone.svg" width="132" height="69" alt="Квадрокоптеры">
+        <a class="product-category-link" href="catalog.html#drone.html">
+          <div class="product-category-img-block-drone">
+            <img src="img/product-category-drone.svg" width="132" height="69" alt="Квадрокоптеры">
           </div>
           Квадрокоптеры
         </a>
@@ -193,22 +188,19 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="service-buttton-list">
           <li>
-            <label class="service-button" for="service-button-delivery">Доставка</label>
-            <input type="radio" id="service-button-delivery" name="service-toggle" checked="">
+            <input type="button" class="popup-button current" value="Доставка" id="service-button-delivery" name="service-toggle">
           </li>
           <li>
-            <label class="service-button" for="service-button-warranty">Гарантия</label>
-            <input type="radio" id="service-button-warranty" name="service-toggle">
+            <input type="button" class="popup-button" value="Гарантия" id="service-button-warranty" name="service-toggle">
           </li>
           <li>
-            <label class="service-button" for="service-button-credit">Кредит</label>
-            <input type="radio" id="service-button-credit" name="service-toggle">
+            <input type="button" class="popup-button" value="Кредит" id="service-button-credit" name="service-toggle">
           </li>
         </ul>
         <section class="service-item-delivery">
           <h3>Доставка</h3>
           <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему
+            Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему
             подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.
           </p>
@@ -216,8 +208,8 @@
         <section class="services-item-warranty">
           <h3>Гарантия</h3>
           <p>
-            Если из-за возгарания купленного у нас товара у вас сгорит
-            дом — не переживайте, мы выдадим вам новый.<br>
+            Если из-за возгарания купленного у&nbsp;нас&nbsp;товара у&nbsp;вас&nbsp;сгорит
+            дом —&nbsp;не&nbsp;переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.
           </p>
         </section>
@@ -233,20 +225,20 @@
       <section class="partners">
         <h2 class="visuall-hidden">Список партнеров</h2>
         <a class="partner-link" href="http://www.dji.com/">
-          <img src="img/logo-1-black-white.jpg" width="260" height="100" alt="dji">
-          <img src="img/logo-1-colored.jpg" width="260" height="100" alt="dji-color">
+          <img src="img/logo-1-black-white.jpg" width="260" height="100" alt="черно-белое лого dji">
+          <img src="img/logo-1-colored.jpg" width="260" height="100" alt="цветное лого dji-color">
         </a>
         <a class="partner-link" href="http://www.sp-gadgets.com/">
-          <img src="img/logo-2-black-white.jpg" width="260" height="100" alt="sp-gadgets">
-          <img src="img/logo-2-colored.jpg" width="260" height="100" alt="sp-gadgets-color">
+          <img src="img/logo-2-black-white.jpg" width="260" height="100" alt="черно-белое лого sp-gadgets">
+          <img src="img/logo-2-colored.jpg" width="260" height="100" alt="цветное лого sp-gadgets-color">
         </a>
         <a class="partner-link" href="http://gopro.ru/">
-          <img src="img/logo-3-black-white.jpg" width="260" height="100" alt="go-pro">
-          <img src="img/logo-3-colored.jpg" width="260" height="100" alt="go-pro-color">
+          <img src="img/logo-3-black-white.jpg" width="260" height="100" alt="черно-белое лого go-pro">
+          <img src="img/logo-3-colored.jpg" width="260" height="100" alt="цветное лого go-pro-color">
         </a>
         <a class="partner-link" href="https://www.vive.com/">
-          <img src="img/logo-4-black-white.jpg" width="260" height="100" alt="vive">
-          <img src="img/logo-4-colored.jpg" width="260" height="100" alt="vive-color">
+          <img src="img/logo-4-black-white.jpg" width="260" height="100" alt="черно-белое лого vive">
+          <img src="img/logo-4-colored.jpg" width="260" height="100" alt="цветное лого vive-color">
         </a>
       </section>
       <article class="company-information">
@@ -284,7 +276,7 @@
           <a class="map" href="#">
             <img src="img/map.jpg" alt="Яндекс карта" width="560" height="222">
           </a>
-          <a class="popup-button" href="write-us.html">Напишите нам</a>
+          <a class="popup-button" href="modals.html#feedback">Напишите нам</a>
         </article>
       </article>
       <footer class="bottom-footer">
@@ -296,6 +288,7 @@
             <p>
               г. Москва, ул. Строителей, 15
             </p>
+            <!-- TODO decoration line -->
           </article>
           <section class="footer-center-links">
             <h2 class="visually-hidden">Сервисы и контакты в соц. сетях</h2>

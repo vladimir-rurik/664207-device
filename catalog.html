@@ -11,7 +11,8 @@
           DEVICE
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <!-- TODO form -->
+        <input type="search" class="input-search" name="search" placeholder="поиск по&nbsp;сайту">
+        <input type="submit" class="input-submit visually-hidden" value="Найти">
       </form>
       <nav class="user-navigation">
         <a class="user-navigation-profile" href="profile.html">Валентин Петухов</a>
@@ -56,11 +57,38 @@
         </nav>
       </header>
       <aside class="product-list-filter">
-        <div class="product-list-filter-title">
-          <h2>Фильтр:</h2>
-        </div>
-        <form class="product-list-filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <!-- TODO filter form -->
+        <h2>Фильтр:</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="form-legend">Стоимость</legend>
+            <input type="range" min="0" max="5000" step="100">
+            <!-- TODO ask the mentor about the non-existent value in the request -->
+            <div class="selected-price">
+              <span>от 0</span>
+              <span>до 5000</span>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="form-legend">Цвет</legend>
+            <input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
+            <label for="black">Черный</label>
+            <input class="filter-checkbox" type="checkbox" name="white" id="white">
+            <label for="white">Белый</label>
+            <input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
+            <label for="blue">Синий</label>
+            <input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
+            <label for="red">Красный</label>
+            <input class="filter-checkbox" type="checkbox" name="pink" id="pink">
+            <label for="pink">Розовый</label>
+          </fieldset>
+          <fieldset>
+            <legend class="form-legend">Bluetooth</legend>
+            <input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="yes-bluetooth-radio" checked>
+            <label for="yes-bluetooth-radio">Есть</label>
+            <input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="no-bluetooth-radio">
+            <label for="no-bluetooth-radio">Нет</label>
+          </fieldset>
+          <button class="popup-button" type="submit">Показать</button>
         </form>
       </aside>
       <section class="product-list-content">
@@ -175,7 +203,8 @@
         </section>
         <aside class="footer-aside">
           <div class="footer-user-navigation-block">
-            <a class="footer-login-link" href="login.html">Войти</a>
+            <a class="footer-profile-link" href="profile.html">Валентин Петухов</a>
+            <a class="footer-logout-link" href="logout.html">Выйти</a>
             <a class="footer-compare-link" href="compare.html">Сравнить</a>
             <a class="footer-shopping-cart-link" href="shopping-cart.html">Корзина</a>
           </div>

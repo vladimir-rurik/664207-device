@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- TODO ask the mentor about the separated file and the whole page invocation as the reaction to a button click. -->
+    <article class="modal-feedback-form" id="feedback-form">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="feedback-person-name">
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label class="feedback-person-email">
+          Ваш e-mail:
+          <input type="text" name="email" placeholder="email@example.com">
+        </label>
+        <label class="feedback-content">
+          Текст письма:
+          <textarea name="letter" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="popup-button" type="submit">Отправить</button>
+      </form>
+    </article>
+    <article class="modal-map" id="yandex-map">
+      <h2 class="visually-hidden">Окно интерактивной карты</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <!-- TODO google/yandex map -->
+    </article>
+  </body>
+</html>
