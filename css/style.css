@@ -5,7 +5,6 @@
   height: 1px;
   margin: -1px;
   /* crossplatform addition */
-  margin: -1px;
   padding: 0;
   border: 0;
   clip-path: inset(50%);
@@ -13,20 +12,72 @@
   white-space: nowrap;
 }
 
-/* .virtual-reality {
-  display: block;
-} */
-
-.virtual-reality::before {
+.product-category-link::before {
   content: "";
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+  display: block;
+  width: 160px;
+  height: 158px;
+  padding-bottom: 2px;
+
+  background-color: #f7e296;
 }
 
 .virtual-reality::after {
   content: "";
+  display: block;
   width: 97px;
   height: 55px;
-  background-image: url("img/product-category-virtual-reality.svg");
+
+  /* background-color: #cccccc; */
+  background-image: url("../img/product-category-virtual-reality.svg");
+}
+
+.selfie-monopod::after {
+  content: "";
+  display: block;
+  width: 86px;
+  height: 117px;
+
+  /* background-color: #cccccc; */
+  background-image: url("../img/product-category-selfie-monopod.svg");
+}
+
+.action-camera::after {
+  content: "";
+  display: block;
+  width: 71px;
+  height: 87px;
+
+  /* background-color: #cccccc; */
+  background-image: url("../img/product-category-action-camera.svg");
+}
+
+.fitness-bracelet::after {
+  content: "";
+  display: block;
+  width: 107px;
+  height: 65px;
+
+  /* background-color: #cccccc; */
+  background-image: url("../img/product-category-fitness-bracelet.svg");
+}
+
+.smart-watch::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 98px;
+
+  /* background-color: #cccccc; */
+  background-image: url("../img/product-category-smart-watch.svg");
+}
+
+.drone::after {
+  content: "";
+  display: block;
+  width: 132px;
+  height: 69px;
+
+  /* background-color: #cccccc; */
+  background-image: url("../img/product-category-drone.svg");
 }

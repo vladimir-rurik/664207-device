@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -131,7 +132,7 @@
           <ul class="slider-button-list">
             <li>
               <label class="vusually-hidden" for="slider-button-first">Слайд для самой длинной палки для селфи</label>
-              <input type="radio" id="slider-button-first" name="slide-toggle" checked="">
+              <input type="radio" id="slider-button-first" name="slide-toggle" checked>
             </li>
             <li>
               <label class="vusually-hidden" for="slider-button-second">Слайд для фитнесс-браслета</label>
@@ -147,40 +148,22 @@
       <section class="top-list-of-product-category">
         <h2 class="visually-hidden">Популярные товары</h2>
         <a class="product-category-link virtual-reality" href="catalog.html#virtual-reality.html">
-          <!-- <div class="product-category-img-block-virtual-reality">
-            <img src="img/product-category-virtual-reality.svg" width="97" height="55" alt="Виртуальная реальность">
-          </div> -->
           Виртуальная реальность
         </a>
-        <a class="product-category-link" href="catalog.html#monopod.html">
-          <div class="product-category-img-block-selfie-monopod">
-            <img src="img/product-category-selfie-monopod.svg" width="86" height="117" alt="Моноподы">
-          </div>
+        <a class="product-category-link selfie-monopod" href="catalog.html#monopod.html">
           Моноподы
           для&nbsp;селфи
         </a>
-        <a class="product-category-link" href="catalog.html#action-camera.html">
-          <div class="product-category-img-block-action-camera">
-            <img src="img/product-category-action-camera.svg" width="71" height="87" alt="Камеры">
-          </div>
+        <a class="product-category-link action-camera" href="catalog.html#action-camera.html">
           Экшн-камеры
         </a>
-        <a class="product-category-link" href="catalog.html#fitness-bracelet.html">
-          <div class="product-category-img-block-fitness-bracelet">
-            <img src="img/product-category-fitness-bracelet.svg" width="107" height="65" alt="Фитнесc браслеты">
-          </div>
+        <a class="product-category-link fitness-bracelet" href="catalog.html#fitness-bracelet.html">
           Фитнесc браслеты
         </a>
-        <a class="product-category-link" href="catalog.html#smart-watch.html">
-          <div class="product-category-img-block-smart-watch">
-            <img src="img/product-category-smart-watch.svg" width="56" height="98" alt="Умные часы">
-          </div>
+        <a class="product-category-link smart-watch" href="catalog.html#smart-watch.html">
           Умные часы
         </a>
-        <a class="product-category-link" href="catalog.html#drone.html">
-          <div class="product-category-img-block-drone">
-            <img src="img/product-category-drone.svg" width="132" height="69" alt="Квадрокоптеры">
-          </div>
+        <a class="product-category-link drone" href="catalog.html#drone.html">
           Квадрокоптеры
         </a>
       </section>
@@ -317,6 +300,32 @@
             </div>
           </aside>
       </footer>
+      <!-- section of modal windows -->
+      <article class="modal-feedback-form" id="feedback-form">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <button class="modal-close" type="button">Закрыть</button>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="feedback-person-name">
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label class="feedback-person-email">
+            Ваш e-mail:
+            <input type="text" name="email" placeholder="email@example.com">
+          </label>
+          <label class="feedback-content">
+            Текст письма:
+            <textarea name="letter" placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="popup-button" type="submit">Отправить</button>
+        </form>
+      </article>
+      <article class="modal-map" id="yandex-map">
+        <h2 class="visually-hidden">Окно интерактивной карты</h2>
+        <button class="modal-close" type="button">Закрыть</button>
+        <!-- TODO google/yandex map -->
+      </article>
+      <!-- end of the section of modals -->
     </main>
   </body>
 </html>
