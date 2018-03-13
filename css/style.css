@@ -1,3 +1,56 @@
+body {
+  min-width: 1240px;
+
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  color: #464646;
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Gilroy ExtraBold";
+  font-style: normal;
+
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: lighter;
+  font-family: "Gilroy Light";
+  font-style: normal;
+
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff2") format("woff2");;
+}
+
+@font-face {
+  font-weight: lighter;
+  font-family: "Open Sans Light";
+  font-style: normal;
+
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+}
+
+h2,
+h3 {
+  font-size: 47px;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+body > input[type="radio"],
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -10,6 +63,79 @@
   clip-path: inset(50%);
   overflow: hidden;
   white-space: nowrap;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.top-header {
+  position: relative;
+
+  min-height: 265px;
+  margin-top: 40px;
+  padding-top: 34px;
+
+  background-color: #f7e296;
+}
+
+.logo {
+  position: absolute;
+  top: -30px;
+  left: 57px;
+  /* z-index: 0; */
+
+  font-size: 48px;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.logo[href]:hover {
+  color: #464646;
+}
+
+.logo[href]:active {
+  color: #666666;
+}
+
+.search-form {
+  position: relative;
+
+  float: left;
+  width: 450px;
+  height: 49px;
+  margin-bottom: 30px;
+
+  line-height: 36px;
+}
+
+.search-form::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  /* background-position:  */
+}
+
+.search-form input[type="search"] {
+  width: 315px;
+  min-height: 49px;
+  padding-left: 40px;
+
+  background-color: #f7e296;
+  border: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  opacity: 0.3;
 }
 
 .product-category-link::before {
