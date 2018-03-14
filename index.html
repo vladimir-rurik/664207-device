@@ -13,7 +13,7 @@
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <input type="search" class="input-search" name="search" placeholder="поиск по&nbsp;сайту">
-        <input type="submit" class="input-submit visually-hidden" value="Найти">
+        <input type="submit" name="submit" value="Найти">
       </form>
       <nav class="user-navigation">
         <a class="user-navigation-login" href="login.html">Войти</a>
@@ -23,7 +23,7 @@
       <nav class="product-navigation">
         <ul class="product-navigation-list">
           <li>
-            <a class="product-navigation-list-dropdownlist-name" href="catalog.html">Каталог товаров</a>
+            <a class="product-navigation-list-dropdownlist-name product-navigation-list-service" href="catalog.html">Каталог товаров</a>
             <ul class="product-navigation-list-dropdownlist">
               <li><a href="catalog.html#virtual-reality">Виртуальная реальность</a></li>
               <li><a href="catalog.html#fitness-bracelet">Фитнесс-браслеты</a></li>
@@ -40,9 +40,9 @@
       </nav>
     </header>
     <main class="index-main">
-      <article class="slider slide-set">
+      <article class="slider container">
         <h2 class="visually-hidden">Слайды</h2>
-        <article class="first-slide" id="slide-longest-selfie-stick">
+        <article class="slide-item first-slide" id="slide-longest-selfie-stick">
           <img src="img/slide-longest-selfie-stick.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
           <header class="slide-header">
             <span class="slide-number">01</span>
@@ -72,7 +72,7 @@
             </dl>
           </footer>
         </article>
-        <article class="second-slide" id="slide-fitness-bracelet">
+        <article class="slide-item second-slide" id="slide-fitness-bracelet">
           <img src="img/slider-fitness-bracelet.png" width="345" height="485" alt="Мотивирующий фитнесс-браслет">
           <header class="slide-header">
             <span class="slide-number">02</span>
@@ -98,7 +98,7 @@
               </ul>
             </footer >
         </article>
-        <article class="third-slide" id="slide-drone">
+        <article class="slide-item third-slide" id="slide-drone">
           <img src="img/slider-drone.png" width="526" height="334" alt="Квадрокоптер с лазером">
           <header class="slide-header">
             <span class="slide-number">03</span>
@@ -145,7 +145,7 @@
           </ul>
         </aside>
       </article>
-      <section class="top-list-of-product-category">
+      <section class="top-list-of-product-category container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <a class="product-category-link virtual-reality" href="catalog.html#virtual-reality.html">
           Виртуальная реальность
