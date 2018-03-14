@@ -28,7 +28,8 @@ body {
   font-family: "Open Sans";
   font-style: normal;
 
-  src: url("../fonts/opensans.woff2") format("woff2");;
+  src:  local("Open Sans"),
+        url("../fonts/opensans.woff2") format("woff2");;
 }
 
 @font-face {
@@ -36,7 +37,8 @@ body {
   font-family: "Open Sans Light";
   font-style: normal;
 
-  src: url("../fonts/opensanslight.woff2") format("woff2");
+  src:  local("Open Sans Lidht"),
+        url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 h2,
