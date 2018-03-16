@@ -259,7 +259,7 @@
           <a class="map" href="#">
             <img src="img/map.jpg" alt="Яндекс карта" width="560" height="222">
           </a>
-          <a class="popup-button" href="modals.html#feedback">Напишите нам</a>
+          <a class="popup-button" href="feedback.html">Напишите нам</a>
         </article>
       </article>
       <footer class="bottom-footer">
@@ -300,32 +300,32 @@
             </div>
           </aside>
       </footer>
-      <!-- section of modal windows -->
-      <article class="modal-feedback-form" id="feedback-form">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <button class="modal-close" type="button">Закрыть</button>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="feedback-person-name">
-            Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-          <label class="feedback-person-email">
-            Ваш e-mail:
-            <input type="text" name="email" placeholder="email@example.com">
-          </label>
-          <label class="feedback-content">
-            Текст письма:
-            <textarea name="letter" placeholder="В свободной форме"></textarea>
-          </label>
-          <button class="popup-button" type="submit">Отправить</button>
-        </form>
-      </article>
-      <article class="modal-map" id="yandex-map">
-        <h2 class="visually-hidden">Окно интерактивной карты</h2>
-        <button class="modal-close" type="button">Закрыть</button>
-        <!-- TODO google/yandex map -->
-      </article>
-      <!-- end of the section of modals -->
     </main>
+    <!-- section of modal windows -->
+    <article class="modal-feedback-form" id="feedback-form">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="feedback-person-name">
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label class="feedback-person-email">
+          Ваш e-mail:
+          <input type="text" name="email" placeholder="email@example.com">
+        </label>
+        <label class="feedback-content">
+          Текст письма:
+          <textarea name="letter" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="popup-button" type="submit">Отправить</button>
+      </form>
+    </article>
+    <article class="modal-map" id="yandex-map">
+      <h2 class="visually-hidden">Окно интерактивной карты</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <!-- TODO google/yandex map -->
+    </article>
+    <!-- end of the section of modals -->
   </body>
 </html>

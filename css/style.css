@@ -1,12 +1,3 @@
-body {
-  min-width: 1240px;
-
-  font-weight: normal;
-  font-size: 15px;
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  color: #464646;
-}
-
 @font-face {
   font-weight: bold;
   font-family: "Gilroy ExtraBold";
@@ -24,7 +15,6 @@ body {
 }
 
 @font-face {
-  font-weight: normal;
   font-family: "Open Sans";
   font-style: normal;
 
@@ -32,13 +22,13 @@ body {
         url("../fonts/opensans.woff2") format("woff2");;
 }
 
-@font-face {
-  font-weight: lighter;
-  font-family: "Open Sans Light";
-  font-style: normal;
+body {
+  min-width: 1240px;
 
-  src:  local("Open Sans Lidht"),
-        url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  color: #464646;
 }
 
 h2,
@@ -241,8 +231,6 @@ a.user-navigation-compare::before {
 
 .product-navigation {
   position: relative;
-
-  clear: both;
 }
 
 .product-navigation ul {
